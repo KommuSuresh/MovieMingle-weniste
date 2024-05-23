@@ -1,0 +1,90 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between; /* Ensure proper space between elements */
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-btn {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.logoutBtn {
+  width: 90px;
+  height: 37px;
+  margin-left: 10px; /* Space between icon and button */
+  text-align: center;
+  margin-right: 20px;
+  outline: none; /* Remove outline */
+  border: 2px solid #3b82f6;
+  border-radius: 5px;
+  background: transparent; /* Set background color to transparent */
+  color: #4f46e5;
+  font-size: 15px; /* Set font size */
+}
+
+.user-prf {
+  width: 30px;
+  height: 30px;
+  color: #00306e;
+  margin-right: 10px;
+}
+
+.hedaing-logo {
+  display: flex;
+  font-family: cursive;
+}
+.first-heading {
+  color: white;
+  background-color: red;
+  font-weight: bold; /* Apply bold font weight */
+  margin-left: 100px;
+  padding: 3px;
+}
+
+.sec-heading {
+  color: rgb(43, 62, 101);
+  font-weight: bold; /* Apply bold font weight */
+  margin-left: 5px;
+  padding: 3px;
+}
+
+.first-heading,
+.sec-heading,
+.user-prf,
+.logoutBtn {
+  display: inline-flex; /* Ensure all elements are displayed in a single line */
+  align-items: center; /* Align elements vertically within their containers */
+}
+
+@media only screen and (max-width: 576px) {
+  .first-heading {
+    font-size: 10px;
+  }
+
+  .sec-heading {
+    font-size: 10px;
+  }
+  .logoutBtn {
+    width: 50px;
+    height: 20px;
+    font-size: 10px; /* Set font size */
+  }
+  .user-prf {
+    width: 20px;
+    height: 20px;
+    color: #00306e;
+    margin-right: 10px;
+  }
+}
